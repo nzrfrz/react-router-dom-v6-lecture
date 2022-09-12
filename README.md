@@ -1,6 +1,6 @@
 # React Router DOM v6 Lecture
 
-## Run "npm intsall" first after pulling then run "npm start" to start the project
+## Run "npm install" first after pulling then run "npm start" to start the project
 
 # Short decription
 ### Lecture section one
