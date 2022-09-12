@@ -1,0 +1,25 @@
+.login-page-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-page-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-page-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
