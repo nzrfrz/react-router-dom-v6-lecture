@@ -6,9 +6,35 @@
     justify-content: center;
 }
 
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .login-page-button {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.input-field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.email-field {
+    margin-bottom: 10px;
+}
+
+.password-input-field {
+    margin-bottom: 10px;
+}
+
+.button-register {
+    margin-bottom: 10px;
+}
+
+.button-registration {
+    margin-top: 10px;
 }
 
 .registration-page-container {

@@ -1,0 +1,41 @@
+1.  make the login function actually happen. 
+    by the time you are clonning this repo, i just created a login function for you, so you guys need to make change about the route.
+    NOTE: BEWARE FOR INFINITE LOOP
+
+2.  Time to do a make over for this web.  
+    Use antd ui library,then make over all the form including form validation, alert, and notification, 
+    also you will learn about css in this task
+
+About form validation, all of this validation below is required, don't miss even a single point
+
+# Registration form
+1. Check if email is valid. (see https://prnt.sc/_bbboq28gNPc)
+2. Check userName can't be empty. (see https://prnt.sc/hV-I5_17RRDA)
+3. Password and confirm password must be match. (see https://prnt.sc/UZIxXhsnVUU3)
+4. Disabling button register if all points above not valid. (see https://prnt.sc/lN2-7i8ZF5AI)
+5. Create alert to store a message if point 1 to 3 is not valid. (SS on point 1 to 3)
+6. Create a loading while hitting to an API. (see https://prnt.sc/jtkUOMBhmB3R)
+7. Create notification after successfully register and redirect to login page. (see https://prnt.sc/mKubynnvGlTH)
+
+# Login form
+1. Disabled button login if user and password is empty
+2. Loading button while hitting to an API
+3. Display error message inside notification when password is wrong. (see https://prnt.sc/oTotesjU708A)
+4. Also for wrong userName or email. (see https://prnt.sc/H9iwnm6BoAx_)
+5. Redirect to whatever your page path after auth
+
+HINT: you can use form component in antd or manual validation using input component
+
+3.  About refresh token and access token.
+    let say you have login with your browser, and you get the access token, now try to login with insomnia or postman.  
+    
+    Case #1 Your web is no longer open in the browser
+    After successfully login with insomnia or postman, in your browser after first loading you need to make the web logout automatically
+    because your access token revoke.  So you guys need to check whether your current access token is valid or not
+    if not valid, you need to redirect user to login page.
+
+    Case #2 Your web is still open in the browser
+    Check if your web has any user activity or if you familiar with the word IDLE.  So in other word, check if your web back from IDLE.
+    then if the acces token is revoke, take user back to login page.
+
+    HINT: search about react idle

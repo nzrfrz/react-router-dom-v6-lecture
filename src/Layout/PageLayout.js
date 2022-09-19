@@ -1,15 +1,12 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
+import { userLogout } from "../_services";
+
 import "./pageLayout.css";
 
 export const PageLayout = () => {
     const navigate = useNavigate();
-
-    const logout = () => {
-        localStorage.removeItem("user");
-        navigate("/login");
-    };
 
     return (
         <div className="layout-container">
@@ -32,7 +29,11 @@ export const PageLayout = () => {
                     <NavLink className="sidebar-items" to={"/profile"}>
                         Profile
                     </NavLink>
-                    <button onClick={() => logout()}>
+                    <button 
+                        onClick={() => {
+                            userLogout(navigate);
+                        }}
+                    >
                         LOGOUT
                     </button>
                 </div>
